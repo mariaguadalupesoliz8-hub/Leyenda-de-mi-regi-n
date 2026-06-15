@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Leyendas de Camiri - Santa Cruz</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Leyendas de de mi región</h1>
+        <nav>
+            <ul>
+                <li><a href="#fotos">Fotos</a></li>
+                <li><a href="#documentos">Documentos</a></li>
+                <li><a href="#interes">Zona de Interés</a></li>
+                <li><a href="#videos">Videos</a></li>
+                <li><a href="#comentarios">Comentarios</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="fotos">
+        <h2>Galería de Fotos</h2>
+        <img src="imagenes/imagen1.png" alt="Leyenda 1">
+        <img src="imagenes/leyenda2.jpg" alt="Leyenda 2">
+    </section>
+
+    <section id="documentos">
+        <h2>Documentos</h2>
+        <a href="documentos/Leyenda del silbaco.docx" target="_blank">Descargar Leyenda del silbaco</a>
+        <a href="documentos/leyenda de duende del monte.docx" target="_blank">Descargar Leyenda en PDF</a>
+    </section>
+
+    <section id="interes">
+        <h2>Zonas de Interés</h2>
+        <p>Camiri es conocida por sus tradiciones guaraníes y leyendas locales que aún se transmiten oralmente.</p>
+    </section>
+
+    <section id="videos">
+        <h2>Videos</h2>
+        <video controls width="400">
+            <source src="videos/leyenda_camiri.mp4" type="video/mp4">
+            Tu navegador no soporta video.
+        </video>
+    </section>
+
+    <section id="comentarios">
+        <h2>Comentarios</h2>
+        <form action="comentarios.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" name="nombre" required>
+            <label for="mensaje">Mensaje:</label>
+            <textarea name="mensaje" required></textarea>
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Proyecto Leyendas de Camiri</p>
+    </footer>
+</body>
+</html>
